@@ -17,7 +17,7 @@ For each image in the video,
 9. Overlay left and right lane lines on the original image for visualization.
 
 
-![alt text][grascale]
+![alt text][grayscale]
 
 
 ### 2. Potential shortcomings with current pipeline
