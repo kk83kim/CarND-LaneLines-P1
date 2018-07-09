@@ -5,11 +5,18 @@
 
 
 ### 1. Software Pipeline
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consists of the following 9 steps.
+For each image in the video, 
+* 1. Convert image to grayscale.
+* 2. Run Canny Edge Detector to produce edge image.
+* 3. Mask edge image with spatial region of interest.
+* 4. Mask edge image again with pixel value region of of interest.  (Only edges from yellow or white pixels are held.)
+* 5. Run Hough Line Detector to detect lines from the masked edge image.
+* 6. Classify lines from the left half of the image as left lane lines and lines from the right half of the image as right lane lines.
+* 7. Filter lines based on the slope of the line. 
+* 8. Fit a single line on the lines from the left lane lines and another single line on the lines from the right lane lines.  RANSAC is used to fit a line which improves the line fitting using only the inliers.
+* 9. Left and right lane lines are overlayed on the original image for visualization.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
 
