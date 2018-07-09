@@ -8,7 +8,7 @@
 [overlayed]: ./test_images/overlayed_img.png
 
 
-### 1. Software Pipeline
+## 1. Software Pipeline
 My pipeline consists of the following 9 steps.
 
 For each image in the video, 
@@ -40,7 +40,7 @@ For each image in the video,
 ![alt text][overlayed]
 
 
-### 2. Potential shortcomings with current pipeline
+## 2. Potential shortcomings with current pipeline
 There are at least a couple of shortcomings with the current approach.  
 
 First, masking using the pixel color actually does not help as much as I hoped to be because the edges detected from the blurred image are the the pixels in the between the sharp change between the background and the white or yellow lanes.  Thus, although some edges are from the actual edges of the lanes, its pixel color is not necessary white or yellow.
@@ -48,7 +48,7 @@ First, masking using the pixel color actually does not help as much as I hoped t
 Second, this pipeline is not very robust to different light conditions.  I tested on the optional challenge video and it did not perform very well.
 
 
-### 3. Possible improvements to current pipeline
+## 3. Possible improvements to current pipeline
 One potential solution to the first shortcoming mentioned above is to look at the neighborhood of pixel colors around the edges instead of the pixel color of the actual edge.
 
 For the second shortcoming, a few additional heuristics could be helpful such as keeping a history of detected lane lines.  Using the position and the slope of the past lane lines could be used to verify if the current detected lane lines are accurate or not.
