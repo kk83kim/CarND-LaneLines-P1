@@ -14,15 +14,19 @@ My pipeline consists of the following 9 steps.
 For each image in the video, 
 
 1. Convert image to grayscale and blur using gaussian filter.
+
 ![alt text][blurred]
 
 2. Run Canny Edge Detector to produce edge image.
+
 ![alt text][edge]
 
 3. Mask edge image with spatial region of interest.
+
 ![alt text][masked_spatial]
 
 4. Mask edge image again with pixel value region of of interest.  (Only edges from yellow or white pixels are held.)
+
 ![alt text][masked_color]
 
 5. Run Hough Line Detector to detect lines from the masked edge image.
