@@ -1,7 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-[image1]: ./test_images/grayscaled_img.png "Grayscale"
-
+[grayscale]: ./test_images/grayscaled_img.png
 
 
 ### 1. Software Pipeline
@@ -18,7 +17,7 @@ For each image in the video,
 9. Overlay left and right lane lines on the original image for visualization.
 
 
-![alt text][image1]
+[grascale]
 
 
 ### 2. Potential shortcomings with current pipeline
