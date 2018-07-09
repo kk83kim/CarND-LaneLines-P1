@@ -14,12 +14,10 @@ My pipeline consists of the following 9 steps.
 For each image in the video, 
 
 1. Convert image to grayscale and blur using gaussian filter.
-
-![alt text][blurred]
+...![alt text][blurred]
 
 2. Run Canny Edge Detector to produce edge image.
-
-![alt text][edge]
+...![alt text][edge]
 
 3. Mask edge image with spatial region of interest.
 
