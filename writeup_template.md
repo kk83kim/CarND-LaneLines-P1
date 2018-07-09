@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-[image1]: ./test_images/grayscaled_img.jpg "Grayscale"
+[image1]: ./test_images/grayscaled_img.png "Grayscale"
 
 
 
